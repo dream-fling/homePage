@@ -1,0 +1,123 @@
+@import "base";
+.zp-fk{
+    width: 100%;
+    height: 4800px;
+    background: black;
+    opacity: 0.7;
+    display: none;
+    z-index: 50;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.wdjl-nr{
+    width: 100%;
+    height: 4800px;
+    background: #ccc;
+}
+.wdjl-nnr{
+    width: 1200px;
+    height: 4800px;
+    @include level;
+    background: #fff;
+    .nnr-dybf{
+      width: 1200px;
+      height: 150px;
+      float: left;
+      .nnr-border{
+          width: 980px;
+          height: 1px;
+          background: darkgray;
+          float: right;
+      }
+      .img{
+          @include box(280px,35px);
+          float: left;
+      }
+    }
+    .nnr-debf{
+        @include box(1200px,120px);
+        border-bottom: 1px solid #ccc;
+        float: left;
+        .debf-khd{
+            @include box(182px,45px);
+            margin-top: 2px;
+            float: left;
+        }
+        .debf-logo{
+            @include box(120px,120px);
+            float: right;
+        }
+    }
+    .dsbf{
+        @include box(1200px,360px);
+        float: left;
+        margin-top: 40px;
+        .dsbf-qqzb{
+            @include box(622px,360px);
+            float: left;
+            .img2{
+                @include box(620px,360px);
+                float: left;
+            }
+        }
+        .qqzb-wz{
+            @include box(560px,360px);
+            float: right;
+            .wz-bt{
+                @include box(560px,34px);
+                float: left;
+                div:nth-of-type(1){
+                    @include box(36px,34px);
+                    font-size: 32px;
+                    line-height: 34px;
+                    text-align: center;
+                    font-weight: bold;
+                    color: orange;
+                    float: left;
+                }
+                div:nth-of-type(2){
+                    @include box(140px,34px);
+                    font-size: 32px;
+                    line-height: 34px;
+                    text-align: center;
+                    font-weight: bold;
+                    color: black;
+                    float: left;
+                }
+                div:nth-of-type(3){
+                    @include box(18px,18px);
+                    background: yellow;
+                    border-radius: 50%;
+                    float: left;
+                    margin-top: 8px;
+                    margin-left: 2px;
+                }
+                div:nth-of-type(4){
+                    @include box(18px,18px);
+                    background: yellow;
+                    border-radius: 50%;
+                    float: left;
+                    margin-top: 8px;
+                    margin-left: 2px;
+                }
+                div:nth-of-type(5){
+                    @include box(18px,18px);
+                    background: yellow;
+                    border-radius: 50%;
+                    float: left;
+                    margin-top: 8px;
+                    margin-left: 2px;
+                }
+            }
+            .qqzb-wz-wz{
+                @include box(520px,256px);
+                float: left;
+                font-size: 12px;
+                color: slategray;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
