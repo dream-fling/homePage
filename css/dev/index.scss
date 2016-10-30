@@ -1,0 +1,287 @@
+@import "base";
+$bjimg:"../img/home/";
+@mixin border{
+    border:1px solid #c7c7c7;
+}
+.banner{
+    @include box(100%,835px);
+    background:url($bjimg+"banner1_02.jpg") no-repeat;
+    background-size:100%;
+    .zhao{
+        @include box(100%,835px);
+        background:rgba(#165c76,0.8);
+        .green-box{
+            position:absolute;
+            right:165px;
+            bottom:51px;
+            z-index: 1;
+            @include box(420px,480px);
+            background:rgba(#1dd473,0.4);
+        }
+        .banner-content{
+            @include box(1438px,745px);
+            background:url($bjimg+"banner1_02.jpg") no-repeat;
+            overflow: hidden;
+            @include level;
+            z-index: 2;
+            top:190px;
+         }
+         .big-fang{
+             @include box(150px,150px);
+             position:absolute;
+             left:43px;
+             bottom:142px;
+             background:rgba(#e8bc0f,0.4);
+             z-index: 3;
+         }
+         .small-fang{
+             @include cube(66px);
+             position:absolute;
+             left:10px;
+             bottom:260px;
+             background:rgba(#e8bc0f,0.4);
+             z-index: 3;
+         }
+         .select-box{
+             @include box(120px,240px);
+             position:absolute;
+             right:110px;
+             bottom:116px;
+             background:#f0c310;
+             z-index: 3;
+             overflow: hidden;
+             .select-list{
+                @include box(16px,96px);
+                margin:0 auto;
+                margin-top:38px;
+                margin-left:25px;
+                .listname{
+                   @include box(16px,16px);
+                   border-radius: 50%; 
+                   background:#fff;
+                   margin-bottom:11px;
+                }
+                .listname:nth-of-type(4){
+                    margin-bottom:0;
+                    border:3px solid #fff;
+                    background:#f0c310;
+                }
+             }
+             .xuhao{
+                 @include box(47px,20px);
+                 float:right;
+                 margin-right:18px;
+                 margin-bottom:104px;
+                 .zeroone{
+                     font-size:26px;
+                     color:#fff;
+                 }
+                 .three{
+                     font-size:22px;
+                     color:#fff;
+                 }
+             }
+             .fangxiang{
+                 @include box(86px,36px);
+                 background: #fff;
+                 line-height: 36px;
+                 border-radius: 20px;
+                 margin-left:-30px;
+                 margin-top:40px;
+                 .left{
+                     color:#e8bc0f;
+                     font-size:24px;
+                     float:right;
+                     margin-right:10px;
+                 }
+                 .right{
+                     color:#e8bc0f;
+                     font-size:24px;
+                     float:right;
+                     margin-right:5px;
+                     
+                 }
+             }
+         }
+         .blue-box{
+             @include box(590px,258px);
+             background:#10c8f0;
+             position:absolute;
+             left:119px;
+             bottom:217px;
+             z-index: 3;
+             @mixin margin{
+                 margin-left:80px;
+             }
+             .words-box{
+                 margin-top:30px;
+                .collection{
+                     @include box(100%,44px);
+                     @include margin;
+                     color:#fff;
+                     font-size:60px;
+                     font-weight:bold;
+                 }
+                .line{
+                     @include box(288px,8px);
+                     background: #fff;
+                     margin-top:22px;
+                     @include margin;
+                } 
+                .text{
+                    @include margin;
+                    color: #fff;
+                    font-size:24px;
+                    font-family: "微软雅黑";
+                    margin-top:22px;
+                }
+             }
+             
+         }
+         .data{
+             @include box(1200px,219px);
+             @include level;
+             z-index: 4;
+             top:770px;
+             background:#fff;
+             .data-top{
+                 @include box(1103px,138px);
+                 margin:0 auto;
+                 border-bottom: 1px dashed #cbcbcb;
+                 .data-topleft{
+                     @include box(334px,44px);
+                     float:left;
+                     line-height: 44px;
+                     margin-top:50px;
+                     margin-left:27px;
+                     .topleft-left{
+                         @include box(160px,100%);
+                         float:left;
+                         border-right:1px dashed #cbcbcb;
+                         .plane{
+                             float:left;
+                             height:44px;
+                         }
+                         .number{
+                             float:left;
+                             font-size:50px;
+                             color:#40d1f1;
+                             margin-left:20px;
+                         }
+                         .origial{
+                             color:#f0c310;
+                         }
+                         .green{
+                             color:#32d486;
+                         }
+                         .blue{
+                             color:#40d1f1;
+                         }
+                     }
+                     
+                     .topleft-right{
+                         @include box(160px,100%);
+                         float:left;
+                         h2{
+                             color:#757575;
+                             font-size:16px;
+                             @include box(100%,22px);
+                             line-height: 22px;
+                             margin-left:15px;
+                         }  
+                         h4{
+                             color:#757575;
+                             font-size:16px;
+                             @include box(100%,22px);
+                             line-height: 22px;
+                             margin-left:15px;
+                             .origial{
+                             color:#f0c310;
+                             }
+                             .green{
+                                 color:#32d486;
+                             }
+                             .blue{
+                                 color:#40d1f1;
+                             }
+                         }
+                    }
+                 .data-topleft:nth-of-type(1){
+                     margin-left:0;
+                     }
+                 }
+            }
+            .data-bottom{
+                @include box(1103px,44px);
+                margin:0 auto;
+                line-height: 44px;
+                margin-top:20px;
+                img{
+                    float:left;
+                    margin-left:30px;
+                }
+                h4{
+                    float:left;
+                    color:#666;
+                    font-size:20px;
+                    margin-left:30px;
+                }
+                .date{
+                    @include box(100px,30px);
+                    background:#07b0d5;
+                    border-radius: 20px;
+                    float:left;
+                    margin-left:30px;
+                    color:#fff;
+                    font-size:18px;
+                    line-height: 30px;
+                    margin-top:5px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+.content{
+    @include box(100%,2044px);
+    background:#f4f4f4;
+    .content-box{
+        @include box($inner-width,1690px);
+        @include center;
+        @include border;
+    }
+}
+.search-box{
+    @include box(1200px,80px);
+    .search{
+        @include box(995px,78px);
+        @include border;
+        float:left;
+        background:#f4f4f4;
+        color:#cccccc;
+        font-size:20px;
+    }
+    .search-word{
+        @include box(180px,78px);
+        background:#40d1f1;
+        color:#fff;
+        line-height: 78px;
+        text-align: center;
+        font-size:30px;
+        float:left;
+        margin-left:25px;
+    }
+}
+.address{
+    @include box(1200px,32px);
+    margin-top:30px;
+    .area{
+        @include box(226px,30px);
+        @include border;
+        float:left;
+        margin-left:17px;
+    }
+    .area:nth-of-type(1){
+        margin-left:0;
+    }
+}
