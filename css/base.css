@@ -1,0 +1,25 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  position: relative;
+  font-family: "microsoft yahei"; }
+
+a {
+  text-decoration: none; }
+
+img {
+  border: 0; }
+
+/*内宽$inner-width*/
+/*文章颜色$articleColor*/
+/*标题的颜色$titleColor*/
+/*图片路径$imgpath:"../img";*/
+/*盒子模型*/
+/*正方体盒子模型*/
+/*检测使用*/
+/*垂直居中vertical*/
+/*水平居中level*/
+/*全居中center*/

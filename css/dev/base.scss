@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    position: relative;
+    font-family: "microsoft yahei";
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: 0;
+}
+/*内宽$inner-width*/
+$inner-width:1200px;
+/*文章颜色$articleColor*/
+$articleColor:#888787;
+/*标题的颜色$titleColor*/
+$titleColor:#45b45a;
+/*图片路径$imgpath:"../img";*/
+$imgpath:"../img";
+
+
+
+/*盒子模型*/
+@mixin box($w,$h) {
+    width: $w;
+    height: $h;
+}
+/*正方体盒子模型*/
+@mixin cube($w) {
+    width: $w;
+    height: $w;
+}
+/*检测使用*/
+@mixin cha($b){
+    border: 1px solid red;
+    background: $b;
+};
+/*垂直居中vertical*/
+@mixin vertical {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+/*水平居中level*/
+@mixin level {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/*全居中center*/
+@mixin center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+@mixin img {
+    max-width: 100%;
+    max-height: 100%;
+    @include center;
+}
