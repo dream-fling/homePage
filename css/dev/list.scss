@@ -161,5 +161,202 @@ $bg:"../img/home/";
     height: 220px;
     margin: 0 auto;
     margin-top: 48px;
+//  padding-top: 45px;
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    .icon{
+         @include box(129px,129px);
+         background: url($bg+"yuan5.jpg")no-repeat;
+         background-size:100%;
+         margin-top: 45px;
+         margin-left: 78px;
+         border: 3px solid #DCDCDC;
+         border-radius: 50%;
+         float:left;
+         margin-right: 45px;
+    }
+    .dress{
+        @include box(569px,220px);
+        font-size: 16px;
+        padding-top: 45px;
+        float: left;
+        p{
+          color: #404040;
+          line-height: 40px; 
+          span{
+                margin-right: 40px;
+            } 
+          .sjzj{
+              font-weight: bold;
+          }
+          .xinzi{
+              font-size: 26px;
+              color: #04B0D4;
+              font-weight: bold;
+          }
+          .guanli{
+              font-size: 12px;
+          }
+        }
+    }
+    .hr{
+       @include box(8px,220px);
+       float: left;
+       p{
+           @include box(7px,7px);
+           background: #929D9F;
+           border-radius: 50%;
+           margin-top: 8px;
+       }
+    }
+    .name{
+         @include box(349px,220px);
+//       padding-left: 100px;
+         text-align: center;
+         float:left;
+         .touxiang{
+             @include box(69px,69px);
+             background: url($bg+"touxiang.jpg")no-repeat;
+             background-size:100%;
+//           @include center;
+             margin: 0 auto;
+             margin-top: 28px;
+         }
+         p{
+             font-size: 18px;
+             color:#000;
+             margin-top: 5px;
+         }
+         .zhiliao{
+             @include box(147px,43px);
+             border-radius: 50px;
+             background: #FFCA4A;
+             margin: 0 auto;
+             margin-top: 20px;
+//           background: url($bg+"")no-repeat;
+//           background-size:100%;
+         }
+    }
+}
+.gl1{
+    margin-top: 12px;
+}
+.pages{
+    @include box(690px,31px);
+    margin: 0 auto;
+//  background: red;
+    margin-top: 103px;
+    .FRIST{
+       @include box(78px,28px); 
+       color: #BFBFBF;
+       font-size: 10px;
+       text-align: center;
+       line-height: 26px;
+       border:1px solid #BFBFBF;
+       border-radius: 50px;
+       float: left;
+       margin-left: 7px;
+    }
+    .prev{
+      margin-left: 19px;  
+    }
+    .ONE{
+       @include box(28px,28px);
+       margin-left: 11px;    
+    }
+    .TWO{
+       color: #fff;
+       background: #2987F8; 
+    }
+    .two{
+        margin-left: 12px;
+        color: #fff;
+        background: #2987F8;
+    }
+}
+.qiye{
+   width: $inner-width;
+   margin: 0 auto;
+   margin-top: 86px; 
+// background: red;
+   .qiye-top{
+     @include box(1200px,46px);
+     line-height: 46px;
+       span{
+           font-size: 20px;
+           color: #727272;
+//         margin-top: 42px;
+            float:left;
+       }
+       .city{
+          font-size: 32px; 
+          color: #43B458;
+          float:left;
+       }
+       .fenlei{
+         @include box(147px,43px);
+         font-size: 16px;
+         text-align: center;
+         border-radius: 50px;
+         background: #FFCA4A;
+         float:left;
+         margin-left: 46px;
+         color:#fff;
+         line-height:43px;
+         }
+         .fenlei1{
+           background: #43D4F3;  
+         }
+         .fenlei2{
+           background: #3DE695;  
+         }
+   }
+   .qiye-bot{
+       @include box(1200px,358px);
+       .bot-one{
+          @include box(364px,358px);
+          margin-left: 31px; 
+          margin-top: 24px;
+          float: left;
+          .bot-one-top{
+             @include box(364px,267px);
+             background: url($bg+"company.jpg")no-repeat;
+             background-size:100%;
+          }
+          .bot-one-bot{
+              @include box(364px,82px);
+              margin-top: 5px;
+              .left{
+                  @include box(286px,82px);
+                  float: left;
+                  h1{
+                      font-size: 18px;
+                      color: #403E3F;
+                      line-height: 30px;
+                      font-style: none;
+                      margin-top: 5px;
+                  }
+                  p{
+                     font-size: 16px;
+                     color: #888888; 
+                  }
+              }
+              .tu{
+                 @include box(77px,77px);
+                 background: url($bg+"logo3.jpg")no-repeat;
+                 background-size:100%;
+                 border-radius: 50%;
+                 border:2px solid #ededed;
+                 float: left; 
+              }
+              .tu1{
+                 background: url($bg+"logo4.jpg")no-repeat;
+                 background-size:cover; 
+              }
+              .tu2{
+                 background: url($bg+"logo5.jpg")no-repeat; 
+                 background-size:100%;
+              }
+          }
+       }
+   }
 }

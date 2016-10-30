@@ -26,6 +26,8 @@ img {
 /*垂直居中vertical*/
 /*水平居中level*/
 /*全居中center*/
+/*园*/
+/*边框*/
 .banner {
   width: 100%;
   height: 750px;
@@ -230,4 +232,248 @@ img {
   margin: 0 auto;
   margin-top: 48px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.gl .icon {
+  width: 129px;
+  height: 129px;
+  background: url("../img/home/yuan5.jpg") no-repeat;
+  background-size: 100%;
+  margin-top: 45px;
+  margin-left: 78px;
+  border: 3px solid #DCDCDC;
+  border-radius: 50%;
+  float: left;
+  margin-right: 45px;
+}
+
+.gl .dress {
+  width: 569px;
+  height: 220px;
+  font-size: 16px;
+  padding-top: 45px;
+  float: left;
+}
+
+.gl .dress p {
+  color: #404040;
+  line-height: 40px;
+}
+
+.gl .dress p span {
+  margin-right: 40px;
+}
+
+.gl .dress p .sjzj {
+  font-weight: bold;
+}
+
+.gl .dress p .xinzi {
+  font-size: 26px;
+  color: #04B0D4;
+  font-weight: bold;
+}
+
+.gl .dress p .guanli {
+  font-size: 12px;
+}
+
+.gl .hr {
+  width: 8px;
+  height: 220px;
+  float: left;
+}
+
+.gl .hr p {
+  width: 7px;
+  height: 7px;
+  background: #929D9F;
+  border-radius: 50%;
+  margin-top: 8px;
+}
+
+.gl .name {
+  width: 349px;
+  height: 220px;
+  text-align: center;
+  float: left;
+}
+
+.gl .name .touxiang {
+  width: 69px;
+  height: 69px;
+  background: url("../img/home/touxiang.jpg") no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+  margin-top: 28px;
+}
+
+.gl .name p {
+  font-size: 18px;
+  color: #000;
+  margin-top: 5px;
+}
+
+.gl .name .zhiliao {
+  width: 147px;
+  height: 43px;
+  border-radius: 50px;
+  background: #FFCA4A;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.gl1 {
+  margin-top: 12px;
+}
+
+.pages {
+  width: 690px;
+  height: 31px;
+  margin: 0 auto;
+  margin-top: 103px;
+}
+
+.pages .FRIST {
+  width: 78px;
+  height: 28px;
+  color: #BFBFBF;
+  font-size: 10px;
+  text-align: center;
+  line-height: 26px;
+  border: 1px solid #BFBFBF;
+  border-radius: 50px;
+  float: left;
+  margin-left: 7px;
+}
+
+.pages .prev {
+  margin-left: 19px;
+}
+
+.pages .ONE {
+  width: 28px;
+  height: 28px;
+  margin-left: 11px;
+}
+
+.pages .TWO {
+  color: #fff;
+  background: #2987F8;
+}
+
+.pages .two {
+  margin-left: 12px;
+  color: #fff;
+  background: #2987F8;
+}
+
+.qiye {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 86px;
+}
+
+.qiye .qiye-top {
+  width: 1200px;
+  height: 46px;
+  line-height: 46px;
+}
+
+.qiye .qiye-top span {
+  font-size: 20px;
+  color: #727272;
+  float: left;
+}
+
+.qiye .qiye-top .city {
+  font-size: 32px;
+  color: #43B458;
+  float: left;
+}
+
+.qiye .qiye-top .fenlei {
+  width: 147px;
+  height: 43px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 50px;
+  background: #FFCA4A;
+  float: left;
+  margin-left: 46px;
+  color: #fff;
+  line-height: 43px;
+}
+
+.qiye .qiye-top .fenlei1 {
+  background: #43D4F3;
+}
+
+.qiye .qiye-top .fenlei2 {
+  background: #3DE695;
+}
+
+.qiye .qiye-bot {
+  width: 1200px;
+  height: 358px;
+}
+
+.qiye .qiye-bot .bot-one {
+  width: 364px;
+  height: 358px;
+  margin-left: 31px;
+  margin-top: 24px;
+  float: left;
+}
+
+.qiye .qiye-bot .bot-one .bot-one-top {
+  width: 364px;
+  height: 267px;
+  background: url("../img/home/company.jpg") no-repeat;
+  background-size: 100%;
+}
+
+.qiye .qiye-bot .bot-one .bot-one-bot {
+  width: 364px;
+  height: 82px;
+  margin-top: 5px;
+}
+
+.qiye .qiye-bot .bot-one .bot-one-bot .left {
+  width: 286px;
+  height: 82px;
+  float: left;
+}
+
+.qiye .qiye-bot .bot-one .bot-one-bot .left h1 {
+  font-size: 18px;
+  color: #403E3F;
+  line-height: 30px;
+  font-style: none;
+  margin-top: 5px;
+}
+
+.qiye .qiye-bot .bot-one .bot-one-bot .left p {
+  font-size: 16px;
+  color: #888888;
+}
+
+.qiye .qiye-bot .bot-one .bot-one-bot .tu {
+  width: 77px;
+  height: 77px;
+  background: url("../img/home/logo3.jpg") no-repeat;
+  background-size: 100%;
+  border-radius: 50%;
+  border: 2px solid #ededed;
+  float: left;
+}
+
+.qiye .qiye-bot .bot-one .bot-one-bot .tu1 {
+  background: url("../img/home/logo4.jpg") no-repeat;
+  background-size: cover;
+}
+
+.qiye .qiye-bot .bot-one .bot-one-bot .tu2 {
+  background: url("../img/home/logo5.jpg") no-repeat;
+  background-size: 100%;
 }
