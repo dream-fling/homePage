@@ -66,3 +66,15 @@ $imgpath:"../img";
     max-height: 100%;
     @include center;
 }
+
+/*园*/
+@mixin yuan{
+     border-radius: 50%;
+}
+/*边框*/
+@mixin frame($t,$b,$l,$r){
+    border-top: $t;
+    border-bottom: $b;
+    border-left: $l;
+    border-right: $r;
+}
