@@ -1,5 +1,165 @@
-.box{
-	width:200px;
-	height:200px;
-	border:1px solid red;
+@import "base";
+$bg:"../img/home/";
+.banner{
+    @include box(100%,750px);
+    background: url($bg+"banner1_02.jpg") no-repeat;
+    background-size: 100%;
+    .zhezhao{
+        @include box(100%,590px);
+        background: rgba(#165c76,0.4);
+        .pp{
+           @include box(1202px,199px);
+           background: #42D1F1;
+           box-shadow: 0 0 15px #000;
+           @include vertical;
+           left:78px;
+           bottom: -580px;
+           .kspp{
+              @include box(232px,199px);
+              background: url($bg+"search.jpg")no-repeat;
+              background-size: 100%;
+              text-align: center;
+              float: left;
+              .zi{
+                 font-size: 18px; 
+                 color: #02254D;
+                 padding-top: 80px;
+              }
+              .zi2{
+                 font-size: 12px; 
+                 color: #02254D;
+              }
+              .circle{
+                 @include box(6px,6px); 
+                 border-radius: 50%;
+                 background:#000;
+                 position: absolute;
+                 right:-3px;
+                 top:0;
+              }
+              .cir1{
+                  top:16px;
+              }
+              .cir2{
+                  top:32px;
+              }
+              .cir3{
+                  top:48px;
+              }
+              .cir4{
+                  top:59px;
+                  background: rgba(#000,0.7);
+              }
+              .cir5{
+                  top:75px;
+                  background: rgba(#000,0.6);
+              }
+              .cir6{
+                  top:91px;
+                  background: rgba(#000,0.5);
+              }
+              .cir7{
+                  top:107px;
+                  background: rgba(#000,0.4);
+              }
+              .cir8{
+                  top:123px;
+                  background: rgba(#000,0.3);
+              }
+              .cir9{
+                  top:139px;
+                  background: rgba(#fff,0.8);
+              }
+              .cir10{
+                  top:155px;
+                  background: rgba(#fff,0.8);
+              }
+              .cir11{
+                  top:171px;
+                  background: rgba(#fff,0.8);
+              }
+              .cir12{
+                  top:187px;
+                  background: rgba(#fff,0.8);
+              }
+           }
+           .text{
+              @include box(846px,82px);  
+              float: left;
+              margin-left: 43px;
+              margin-top: 63px;
+              border-radius: 50px;
+              background: #fff;
+              z-index: 10;
+              line-height: 82px;
+              color:rgba(0,0,0,0.4);
+           }
+           .cir13{
+               @include box(13px,13px); 
+               border-radius: 50%;
+               background: #FFD117; 
+               position: absolute;
+               left:27px;
+               top:37px;
+               z-index: 11;
+           }
+           span{
+               margin-left: 66px;
+           }
+           .text2{
+              @include box(179px,84px); 
+              border-radius: 50px; 
+              border: 3px solid #fff;
+              background: url($bg+"xunzhaobj.jpg"); 
+              margin-left: 680px;
+              margin-top: -70px;
+              box-shadow: 0 0 9px #000;
+              font-size: 35px;
+              line-height: 84px;
+              text-align: center;
+              color: #fff;
+           }
+        }
+    }
+}
+.tj{
+    width: $inner-width;
+    height: 194px;
+    margin:0 auto;
+    .li{
+       @include box(580px,194px);
+       padding-left: 31px;
+       padding-top: 31px;
+       background: url($bg+"xinxi.jpg"); 
+       background-size: 100%;
+       float:left;
+       box-shadow: 0 0 15px rgba(0,0,0,0.5);
+       span{
+           font-size: 20px;
+           color: #fff;
+           margin-top: 42px;
+       }
+       .city{
+          font-size: 32px; 
+       }
+       a{
+           display: block;
+           margin-top: 24px;
+           span{
+               margin-right: 40px;
+           }
+       }
+    }
+    .li1{
+        margin-right: 39px; 
+        background: url($bg+"city.jpg"); 
+        background-size: 100%;   
+    }
+}
+.gl{
+    width: $inner-width;
+    height: 220px;
+    margin: 0 auto;
+    margin-top: 48px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
