@@ -533,6 +533,7 @@ body {
   opacity: 0;
   text-align: center;
   transition: all 1.5s;
+  pointer-events: none;
 }
 
 .cenav .home .homepage_ce .cang span {
@@ -594,5 +595,17 @@ body {
 }
 
 #footer {
+  background: #2D2D2D;
   margin-top: 50px;
+  height: 232px;
+}
+
+#footer .footerBao {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#footer .footerBao .bluehezi {
+  width: 100px;
+  height: 100px;
 }

@@ -402,6 +402,7 @@ body{
         margin-top: 50px;
     }
 }
+//侧导航
 .cenav{
     position: fixed;
     right: 0;
@@ -436,6 +437,7 @@ body{
 //              line-height: 20px;
                 text-align: center;
                 transition: all 1.5s;
+                pointer-events:none;
                 span{
                     position: absolute;
                     left: 28px;
@@ -489,6 +491,17 @@ body{
 .clear{
     clear: both;
 }
+//底部
 #footer{
+    background:#2D2D2D;
     margin-top: 50px;
+    height:232px;
+   .footerBao{
+        width:960px;
+        margin:0 auto;
+        .bluehezi{
+            width:100px;
+            height:100px;
+        }
+   }
 }
