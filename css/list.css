@@ -113,11 +113,12 @@ img {
   height: 16px;
   border-radius: 50%;
   background: #fff;
+  border: 3px solid #fff;
   margin-bottom: 11px;
+  box-sizing: border-box;
 }
 
-.banner .zhao .select-box .select-list .listname:nth-of-type(4) {
-  margin-bottom: 0;
+.banner .zhao .select-box .select-list .listname:nth-of-type(1) {
   border: 3px solid #fff;
   background: #f0c310;
 }
@@ -138,6 +139,27 @@ img {
 .banner .zhao .select-box .xuhao .three {
   font-size: 22px;
   color: #fff;
+}
+
+.banner .zhao .select-box .xuhao div {
+  height: 26px;
+  width: 26px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner .zhao .select-box .xuhao div .zeroone {
+  font-size: 26px;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.banner .zhao .select-box .xuhao div .zeroone:nth-of-type(1) {
+  opacity: 1;
 }
 
 .banner .zhao .select-box .fangxiang {
@@ -173,6 +195,7 @@ img {
   top: 0;
   bottom: 0;
   margin: auto;
+  left: 78px;
   bottom: -830px;
   z-index: 111;
 }
@@ -386,7 +409,6 @@ img {
 }
 
 .gl .dress p {
-  color: #404040;
   line-height: 40px;
 }
 
@@ -404,7 +426,7 @@ img {
 
 .gl .dress p .xinzi {
   font-size: 26px;
-  color: #EBC445;
+  color: #08B0D5;
   font-weight: bold;
 }
 
@@ -455,17 +477,17 @@ img {
 .gl .name .zhiliao {
   width: 147px;
   height: 43px;
-  border-radius: 50px;
-  background: #FFCA4A;
+  background: url("../img/home/zhiliao1.png");
   margin: 0 auto;
   margin-top: 20px;
-  line-height: 43px;
-  text-align: center;
-  color: #fff;
 }
 
 .gl .name .zhiliao1 {
-  background: #42D1F1;
+  background: url("../img/home/zhiliao2.png");
+}
+
+.gl .name .zhiliao2 {
+  background: url("../img/home/zhiliao3.png");
 }
 
 .gl1 {
@@ -526,6 +548,21 @@ img {
   line-height: 46px;
 }
 
+.qiye .qiye-top .CIR {
+  width: 5px;
+  height: 5px;
+  background: #ebc243;
+  margin-left: 5px;
+  border-radius: 50%;
+}
+
+.qiye .qiye-top .long {
+  width: 30px;
+  height: 5px;
+  background: #ebc243;
+  border-radius: 20px;
+}
+
 .qiye .qiye-top span {
   font-size: 20px;
   color: #727272;
@@ -541,22 +578,17 @@ img {
 .qiye .qiye-top .fenlei {
   width: 147px;
   height: 43px;
-  font-size: 16px;
-  text-align: center;
-  border-radius: 50px;
-  background: #FFCA4A;
+  background: url("../img/home/fenlei1.png");
   float: left;
   margin-left: 46px;
-  color: #fff;
-  line-height: 43px;
 }
 
 .qiye .qiye-top .fenlei1 {
-  background: #43D4F3;
+  background: url("../img/home/fenlei2.png");
 }
 
 .qiye .qiye-top .fenlei2 {
-  background: #3DE695;
+  background: url("../img/home/fenlei3.png");
 }
 
 .qiye .qiye-bot {
