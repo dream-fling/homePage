@@ -1,0 +1,62 @@
+@import "base";
+
+#footer{
+	@include box(100%,300px)
+	position: relative;
+	left: 0;
+	bottom: 0;
+	background: #2d2d2d;
+	.footerBao{
+		@include box(1200px,100%);
+	    @include level;
+	    // background: red;
+	    padding-top:65px;
+	    // padding-left:27px; 
+	    img{
+	    	// @include box(150px,)
+	    	// width: 150px;
+	    	// height: 200;
+	    	// margin-top: 40px;
+	    	float: left;
+	    }
+	    .footerZiti{
+	    	width: 770px;
+	    	height: 150px;
+	    	float: left;
+	        top: 3px;
+	    	left: 27px;	 
+
+	    ul > li{
+	    	float: left;
+	    	margin-left: 40px;
+	    	a{color: #ffffff}
+	    }
+	    span{
+		   @include box(770px,30px);
+	    	float: left;
+	    	color: #ffffff;
+	    	left: 40px;
+	    	top: 3px;
+	    	font-size: 12px;
+	    }
+	    .imgtubiao{
+		   @include box(770px,auto);
+		   img{float: left;
+		   @include box(40px,40px);
+		   left: 30px;
+		   margin-left: 10px;
+
+		   }
+
+	    }
+	    }
+	    .bluehezi{
+		   @include box(140px,140px);
+		   background: #25b0ff;
+		   float: right;
+
+	    }
+
+	}
+
+}
