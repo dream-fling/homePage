@@ -1,127 +1,264 @@
 @import "base";
 $bg:"../img/home/";
 .banner{
-    @include box(100%,750px);
-    background: url($bg+"banner1_02.jpg") no-repeat;
-    background-size: 100%;
-    .zhezhao{
-        @include box(100%,590px);
-        background: rgba(#165c76,0.4);
-        .pp{
-           @include box(1202px,199px);
-           background: #42D1F1;
-           box-shadow: 0 0 15px #000;
-           @include vertical;
-           left:78px;
-           bottom: -580px;
-           .kspp{
-              @include box(232px,199px);
-              background: url($bg+"search.jpg")no-repeat;
-              background-size: 100%;
-              text-align: center;
-              float: left;
-              .zi{
-                 font-size: 18px; 
-                 color: #02254D;
-                 padding-top: 80px;
-              }
-              .zi2{
-                 font-size: 12px; 
-                 color: #02254D;
-              }
-              .circle{
-                 @include box(6px,6px); 
-                 border-radius: 50%;
-                 background:#000;
-                 position: absolute;
-                 right:-3px;
-                 top:0;
-              }
-              .cir1{
-                  top:16px;
-              }
-              .cir2{
-                  top:32px;
-              }
-              .cir3{
-                  top:48px;
-              }
-              .cir4{
-                  top:59px;
-                  background: rgba(#000,0.7);
-              }
-              .cir5{
-                  top:75px;
-                  background: rgba(#000,0.6);
-              }
-              .cir6{
-                  top:91px;
-                  background: rgba(#000,0.5);
-              }
-              .cir7{
-                  top:107px;
-                  background: rgba(#000,0.4);
-              }
-              .cir8{
-                  top:123px;
-                  background: rgba(#000,0.3);
-              }
-              .cir9{
-                  top:139px;
-                  background: rgba(#fff,0.8);
-              }
-              .cir10{
-                  top:155px;
-                  background: rgba(#fff,0.8);
-              }
-              .cir11{
-                  top:171px;
-                  background: rgba(#fff,0.8);
-              }
-              .cir12{
-                  top:187px;
-                  background: rgba(#fff,0.8);
-              }
-           }
-           .text{
-              @include box(846px,82px);  
-              float: left;
-              margin-left: 43px;
-              margin-top: 63px;
-              border-radius: 50px;
-              background: #fff;
-              z-index: 10;
-              line-height: 82px;
-              color:rgba(0,0,0,0.4);
-           }
-           .cir13{
-               @include box(13px,13px); 
-               border-radius: 50%;
-               background: #FFD117; 
-               position: absolute;
-               left:27px;
-               top:37px;
-               z-index: 11;
-           }
-           span{
-               margin-left: 66px;
-           }
-           .text2{
-              @include box(179px,84px); 
-              border-radius: 50px; 
-              border: 3px solid #fff;
-              background: url($bg+"xunzhaobj.jpg"); 
-              margin-left: 680px;
-              margin-top: -70px;
-              box-shadow: 0 0 9px #000;
-              font-size: 35px;
-              line-height: 84px;
-              text-align: center;
-              color: #fff;
-           }
+    @include box(100%,835px);
+    background:url($bg+"banner1_02.jpg") no-repeat;
+    background-size:100%;
+    .zhao{
+        @include box(100%,835px);
+        background:rgba(#165c76,0.8);
+        .green-box{
+            position:absolute;
+            right:165px;
+            bottom:51px;
+            z-index: 1;
+            @include box(420px,480px);
+            background:rgba(#1dd473,0.4);
+        }
+        .banner-content{
+            @include box(1438px,745px);
+            background:url($bg+"banner1_02.jpg") no-repeat;
+            overflow: hidden;
+            @include level;
+            z-index: 2;
+            top:190px;
+         }
+         .big-fang{
+             @include box(150px,150px);
+             position:absolute;
+             left:43px;
+             bottom:142px;
+             background:rgba(#e8bc0f,0.4);
+             z-index: 3;
+         }
+         .small-fang{
+             @include cube(66px);
+             position:absolute;
+             left:10px;
+             bottom:260px;
+             background:rgba(#e8bc0f,0.4);
+             z-index: 3;
+         }
+         .select-box{
+             @include box(120px,240px);
+             position:absolute;
+             right:110px;
+             bottom:116px;
+             background:#f0c310;
+             z-index: 3;
+             overflow: hidden;
+             .select-list{
+                @include box(16px,96px);
+                margin:0 auto;
+                margin-top:38px;
+                margin-left:25px;
+                .listname{
+                   @include box(16px,16px);
+                   border-radius: 50%; 
+                   background:#fff;
+                   margin-bottom:11px;
+                }
+                .listname:nth-of-type(4){
+                    margin-bottom:0;
+                    border:3px solid #fff;
+                    background:#f0c310;
+                }
+             }
+             .xuhao{
+                 @include box(47px,20px);
+                 float:right;
+                 margin-right:18px;
+                 margin-bottom:104px;
+                 .zeroone{
+                     font-size:26px;
+                     color:#fff;
+                 }
+                 .three{
+                     font-size:22px;
+                     color:#fff;
+                 }
+             }
+             .fangxiang{
+                 @include box(86px,36px);
+                 background: #fff;
+                 line-height: 36px;
+                 border-radius: 20px;
+                 margin-left:-30px;
+                 margin-top:40px;
+                 .left{
+                     color:#e8bc0f;
+                     font-size:24px;
+                     float:right;
+                     margin-right:10px;
+                 }
+                 .right{
+                     color:#e8bc0f;
+                     font-size:24px;
+                     float:right;
+                     margin-right:5px;
+                     
+                 }
+             }
+         }
+         .blue-box{
+             @include box(590px,258px);
+             background:#10c8f0;
+             position:absolute;
+             left:119px;
+             bottom:217px;
+             z-index: 3;
+             @mixin margin{
+                 margin-left:80px;
+             }
+             .words-box{
+                 margin-top:30px;
+                .collection{
+                     @include box(100%,44px);
+                     @include margin;
+                     color:#fff;
+                     font-size:60px;
+                     font-weight:bold;
+                 }
+                .line{
+                     @include box(288px,8px);
+                     background: #fff;
+                     margin-top:22px;
+                     @include margin;
+                } 
+                .text{
+                    @include margin;
+                    color: #fff;
+                    font-size:24px;
+                    font-family: "微软雅黑";
+                    margin-top:22px;
+                }
+         
+            }
         }
     }
 }
+//.banner{
+//  @include box(100%,750px);
+//  background: url($bg+"banner1_02.jpg") no-repeat;
+//  background-size: 100%;
+//  .zhezhao{
+//      @include box(100%,590px);
+//      background: rgba(#165c76,0.4);
+//      .pp{
+//         @include box(1202px,199px);
+//         background: #42D1F1;
+//         box-shadow: 0 0 15px #000;
+//         @include vertical;
+//         left:78px;
+//         bottom: -580px;
+//         .kspp{
+//            @include box(232px,199px);
+//            background: url($bg+"search.jpg")no-repeat;
+//            background-size: 100%;
+//            text-align: center;
+//            float: left;
+//            .zi{
+//               font-size: 18px; 
+//               color: #02254D;
+//               padding-top: 80px;
+//            }
+//            .zi2{
+//               font-size: 12px; 
+//               color: #02254D;
+//            }
+//            .circle{
+//               @include box(6px,6px); 
+//               border-radius: 50%;
+//               background:#000;
+//               position: absolute;
+//               right:-3px;
+//               top:0;
+//            }
+//            .cir1{
+//                top:16px;
+//            }
+//            .cir2{
+//                top:32px;
+//            }
+//            .cir3{
+//                top:48px;
+//            }
+//            .cir4{
+//                top:59px;
+//                background: rgba(#000,0.7);
+//            }
+//            .cir5{
+//                top:75px;
+//                background: rgba(#000,0.6);
+//            }
+//            .cir6{
+//                top:91px;
+//                background: rgba(#000,0.5);
+//            }
+//            .cir7{
+//                top:107px;
+//                background: rgba(#000,0.4);
+//            }
+//            .cir8{
+//                top:123px;
+//                background: rgba(#000,0.3);
+//            }
+//            .cir9{
+//                top:139px;
+//                background: rgba(#fff,0.8);
+//            }
+//            .cir10{
+//                top:155px;
+//                background: rgba(#fff,0.8);
+//            }
+//            .cir11{
+//                top:171px;
+//                background: rgba(#fff,0.8);
+//            }
+//            .cir12{
+//                top:187px;
+//                background: rgba(#fff,0.8);
+//            }
+//         }
+//         .text{
+//            @include box(846px,82px);  
+//            float: left;
+//            margin-left: 43px;
+//            margin-top: 63px;
+//            border-radius: 50px;
+//            background: #fff;
+//            z-index: 10;
+//            line-height: 82px;
+//            color:rgba(0,0,0,0.4);
+//         }
+//         .cir13{
+//             @include box(13px,13px); 
+//             border-radius: 50%;
+//             background: #FFD117; 
+//             position: absolute;
+//             left:27px;
+//             top:37px;
+//             z-index: 11;
+//         }
+//         span{
+//             margin-left: 66px;
+//         }
+//         .text2{
+//            @include box(179px,84px); 
+//            border-radius: 50px; 
+//            border: 3px solid #fff;
+//            background: url($bg+"xunzhaobj.jpg"); 
+//            margin-left: 680px;
+//            margin-top: -70px;
+//            box-shadow: 0 0 9px #000;
+//            font-size: 35px;
+//            line-height: 84px;
+//            text-align: center;
+//            color: #fff;
+//         }
+//      }
+//  }
+//}
 .tj{
     width: $inner-width;
     height: 194px;
@@ -161,18 +298,26 @@ $bg:"../img/home/";
     height: 220px;
     margin: 0 auto;
     margin-top: 48px;
-//  padding-top: 45px;
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
     .icon{
          @include box(129px,129px);
-         background: url($bg+"yuan5.jpg")no-repeat;
-         background-size:100%;
+//       background: url($bg+"yuan5.jpg")no-repeat;
+//       background-size:100%;
          margin-top: 45px;
          margin-left: 78px;
-         border: 3px solid #DCDCDC;
          border-radius: 50%;
-         float:left;
+         overflow: hidden;
+         float:left; border: 3px solid #DCDCDC;
          margin-right: 45px;
+         text-align: center;
+//       @include vertical;
+         background: #00293F;
+         img{
+             width: 80px;
+             margin-top:25px ;
+             
+//          
+         }
     }
     .dress{
         @include box(569px,220px);
@@ -188,10 +333,16 @@ $bg:"../img/home/";
           .sjzj{
               font-weight: bold;
           }
+          .sjzj1{
+              color: #EBC548; 
+          }
           .xinzi{
               font-size: 26px;
-              color: #04B0D4;
+              color: #EBC445;
               font-weight: bold;
+          }
+          .xinzi1{
+             color: #EBC548; 
           }
           .guanli{
               font-size: 12px;
@@ -232,8 +383,12 @@ $bg:"../img/home/";
              background: #FFCA4A;
              margin: 0 auto;
              margin-top: 20px;
-//           background: url($bg+"")no-repeat;
-//           background-size:100%;
+             line-height: 43px;
+             text-align: center;
+             color: #fff;
+         }
+         .zhiliao1{
+             background: #42D1F1;
          }
     }
 }
@@ -243,7 +398,6 @@ $bg:"../img/home/";
 .pages{
     @include box(690px,31px);
     margin: 0 auto;
-//  background: red;
     margin-top: 103px;
     .FRIST{
        @include box(78px,28px); 
@@ -277,14 +431,13 @@ $bg:"../img/home/";
    width: $inner-width;
    margin: 0 auto;
    margin-top: 86px; 
-// background: red;
+   margin-bottom: 70px;
    .qiye-top{
      @include box(1200px,46px);
      line-height: 46px;
        span{
            font-size: 20px;
            color: #727272;
-//         margin-top: 42px;
             float:left;
        }
        .city{
@@ -342,19 +495,29 @@ $bg:"../img/home/";
               }
               .tu{
                  @include box(77px,77px);
-                 background: url($bg+"logo3.jpg")no-repeat;
-                 background-size:100%;
                  border-radius: 50%;
                  border:2px solid #ededed;
                  float: left; 
+                 text-align: center;
+                 background: #080808;
+                 overflow: hidden;
+                 img{
+                     width:30px;
+                 }
               }
               .tu1{
-                 background: url($bg+"logo4.jpg")no-repeat;
-                 background-size:cover; 
+                  background: #F7941D;
+                  img{
+                      margin-top: 10px;
+                      width:40px;
+                  }
               }
               .tu2{
-                 background: url($bg+"logo5.jpg")no-repeat; 
-                 background-size:100%;
+                 background: #fff;
+                  img{
+                      margin-top: 15px;
+                      width:70px;
+                  }
               }
           }
        }
