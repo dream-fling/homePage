@@ -61,6 +61,23 @@ body {
   bottom: 190px;
 }
 
+.wenzi {
+  width: 75px;
+  position: absolute;
+  top: 170px;
+  left: 390px;
+  background: #fff;
+  z-index: 100;
+  text-align: center;
+}
+
+.wenzi .a {
+  display: block;
+  font-size: 10px;
+  color: #ccc;
+  background: #fff;
+}
+
 .ui {
   width: 850px;
   height: 315px;
@@ -947,7 +964,62 @@ body {
 }
 
 #footer {
-  margin-top: 2338px;
+  margin-top: 2358px;
   height: 215px;
   width: 100%;
+}
+
+.zhuangshi {
+  width: 200px;
+  height: 30px;
+  -webkit-border-radius: 50px;
+  background: #FFD202;
+  position: absolute;
+  top: 730px;
+  left: 11%;
+  z-index: -10;
+}
+
+.zhuangshi1 {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #FFD202;
+  position: absolute;
+  top: 700px;
+  left: 10%;
+  z-index: -10;
+}
+
+.zhuangshi3 {
+  width: 200px;
+  height: 30px;
+  -webkit-border-radius: 50px;
+  background: #FFD202;
+  position: absolute;
+  top: 940px;
+  right: 11%;
+  z-index: -10;
+}
+
+.zhuangshi4 {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #FFD202;
+  position: absolute;
+  top: 940px;
+  right: 8%;
+  z-index: -10;
+}
+
+.zhuangshi5 {
+  width: 300px;
+  height: 15px;
+  -webkit-border-radius: 50px;
+  background: #FFD202;
+  position: absolute;
+  top: 980px;
+  right: 14%;
+  z-index: -10;
 }
