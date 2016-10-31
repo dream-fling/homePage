@@ -497,6 +497,7 @@ body {
   top: 0;
   height: 100%;
   width: 50px;
+  z-index: 100;
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -586,4 +587,12 @@ body {
 
 .homepage_ce:nth-of-type(5):hover .cang {
   opacity: 1;
+}
+
+.clear {
+  clear: both;
+}
+
+#footer {
+  margin-top: 50px;
 }
