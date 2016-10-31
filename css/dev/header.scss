@@ -8,6 +8,9 @@ $headerimg:"../img/header/";
 	background:#104860;
 
 }
+.background{
+    background:rgba(7,78,113,0.6);
+}
 #headerHe{
 	@include box(1200px,100%);
 	@include level;

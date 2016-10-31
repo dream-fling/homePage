@@ -34,9 +34,10 @@ img {
   position: relative;
   left: 0;
   top: 0;
-  background: #104860;
 }
-
+.background{
+    background:rgba(7,78,113,0.8);
+}
 #headerHe {
   width: 1200px;
   height: 100%;

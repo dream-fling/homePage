@@ -24,7 +24,7 @@ $bjimg:"../img/home/";
             overflow: hidden;
             @include level;
             z-index: 2;
-            top:190px;
+            top:80px;
          }
          .big-fang{
              @include box(150px,150px);
@@ -573,5 +573,31 @@ $bjimg:"../img/home/";
             
         }
         
+    }
+}
+#fixed{
+    @include box(50px,998px);
+    background:#242629;
+    position:fixed;
+    right:0;
+    top:0;
+    .fixed-cir{
+        @include box(34px,420px);
+        border:1px solid #fff;
+        margin:0 auto;
+        margin-top:200px;
+        .cir-list{
+            width:32px;
+            height:32px;
+            float:left;
+            border-radius: 50%;
+            background:#3c4046;
+            margin-bottom:45px;
+            margin:0 auto;
+        }
+        .cir-list:nth-of-type(1){
+            background:#10c8f0;
+            margin-top:0;
+        }
     }
 }
