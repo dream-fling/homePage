@@ -1,0 +1,77 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  position: relative;
+  font-family: "微软雅黑"; }
+
+a {
+  text-decoration: none; }
+
+img {
+  border: 0; }
+
+/*内宽$inner-width*/
+/*文章颜色$articleColor*/
+/*标题的颜色$titleColor*/
+/*图片路径$imgpath:"../img";*/
+/*盒子模型*/
+/*正方体盒子模型*/
+/*检测使用*/
+/*垂直居中vertical*/
+/*水平居中level*/
+/*全居中center*/
+/*园*/
+/*边框*/
+#footer {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  background: #2d2d2d; }
+  #footer .footerBao {
+    width: 1200px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 65px; }
+    #footer .footerBao img {
+      float: left; }
+    #footer .footerBao .footerZiti {
+      width: 770px;
+      height: 150px;
+      float: left;
+      top: 3px;
+      left: 27px; }
+      #footer .footerBao .footerZiti ul > li {
+        float: left;
+        margin-left: 40px; }
+        #footer .footerBao .footerZiti ul > li a {
+          color: #ffffff; }
+      #footer .footerBao .footerZiti span {
+        width: 770px;
+        height: 30px;
+        float: left;
+        color: #ffffff;
+        left: 40px;
+        top: 3px;
+        font-size: 12px; }
+      #footer .footerBao .footerZiti .imgtubiao {
+        width: 770px;
+        height: auto; }
+        #footer .footerBao .footerZiti .imgtubiao img {
+          float: left;
+          width: 40px;
+          height: 40px;
+          left: 30px;
+          margin-left: 10px; }
+    #footer .footerBao .bluehezi {
+      width: 140px;
+      height: 140px;
+      background: #25b0ff;
+      float: right; }
