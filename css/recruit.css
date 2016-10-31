@@ -54,6 +54,13 @@ body {
   font-family: "iconfont";
 }
 
+.kk {
+  width: 140px;
+  position: absolute;
+  right: 115px;
+  bottom: 190px;
+}
+
 .ui {
   width: 850px;
   height: 315px;
