@@ -9,15 +9,31 @@
     position: fixed;
     left: 0;
     top: 0;
+    a:nth-of-type(1){
+        @include box(470px,400px);
+        margin-left: 425px;
+        margin-top: 60px;
+        img{
+           @include box(470px,400px); 
+        }
+    }
+    a:nth-of-type(2){
+        @include box(470px,400px);
+        margin-left: 425px;
+        margin-top: 60px;
+        img{
+           @include box(470px,400px); 
+        }
+    }
 }
 .wdjl-nr{
     width: 100%;
-    height: 4800px;
-    background: #ccc;
+    height: 2450px;
+    margin-top: 140px;
 }
 .wdjl-nnr{
     width: 1200px;
-    height: 4800px;
+    height: 2450px;
     @include level;
     background: #fff;
     .nnr-dybf{
@@ -116,6 +132,459 @@
                 font-size: 12px;
                 color: slategray;
                 margin-top: 20px;
+            }
+        }
+    }
+    .dshbf{
+        @include box(1200px,423px);
+        float: left;
+        margin-top: 80px;
+        border-bottom: 1px solid #ccc;
+        .dshbf-zwjs{
+            @include box(280px,382px);
+            float: left;
+            background: #11C8F0;
+            .dshbf-tx{
+                @include box(200px,105px);
+                margin-top: 60px;
+                margin-left: 40px;
+                float: left;
+                img{
+                    @include box(200px,105px);
+                }
+            }
+            .zwjs{
+                @include box(186px,128px);
+                margin-top: 20px;
+                margin-left: 47px;
+                float: left;
+                span:nth-of-type(1){
+                    @include box(186px,22px);
+                    color: #445159;
+                    line-height: 22px;
+                    font-size: 15px;
+                    float: left;
+                }
+                span:nth-of-type(2){
+                    @include box(186px,22px);
+                    color: #445159;
+                    line-height: 22px;
+                    font-size: 15px;
+                    float: left;
+                }
+                span:nth-of-type(3){
+                    @include box(186px,70px);
+                    color: #445159;
+                    font-size: 15px;
+                    float: left;
+                }
+                span:nth-of-type(4){
+                    @include box(186px,22px);
+                    color: #445159;
+                    line-height: 22px;
+                    font-size: 15px;
+                    margin-top: 10px;
+                    float: left;
+                }
+            }
+        }
+        .dshbf-spjs{
+            @include box(900px,366px);
+            float: right;
+            margin-top: 15px;
+            margin-left: 15px;
+            .wz-bt{
+                @include box(900px,34px);
+                float: left;
+                div:nth-of-type(1){
+                    @include box(36px,34px);
+                    font-size: 32px;
+                    line-height: 34px;
+                    text-align: center;
+                    font-weight: bold;
+                    color: orange;
+                    float: left;
+                }
+                div:nth-of-type(2){
+                    @include box(140px,34px);
+                    font-size: 32px;
+                    line-height: 34px;
+                    text-align: center;
+                    font-weight: bold;
+                    color: black;
+                    float: left;
+                }
+                div:nth-of-type(3){
+                    @include box(18px,18px);
+                    background: yellow;
+                    border-radius: 50%;
+                    float: left;
+                    margin-top: 8px;
+                    margin-left: 2px;
+                }
+                div:nth-of-type(4){
+                    @include box(18px,18px);
+                    background: yellow;
+                    border-radius: 50%;
+                    float: left;
+                    margin-top: 8px;
+                    margin-left: 2px;
+                }
+                div:nth-of-type(5){
+                    @include box(18px,18px);
+                    background: yellow;
+                    border-radius: 50%;
+                    float: left;
+                    margin-top: 8px;
+                    margin-left: 2px;
+                }
+            }
+            .spjs{
+                @include box(900px,328px);
+                float: right;
+                .spjs-d1{
+                    @include box(288px,328px);
+                    float: left;
+                    span{
+                        @include box(288px,25px);
+                        font-size: 20px;
+                        line-height: 25px;
+                        float: left;
+                        color: #000000;
+                    }
+                    a{
+                        @include box(288px,25px);
+                        float: left;
+                        margin-top: 25px;
+                        img{
+                            @include box(288px,25px);
+                        }
+                    }
+                    div{
+                        @include box(131px,38px);
+                        float: left;
+                        background: orange;
+                        color: #fff;
+                        margin-top: 40px;
+                        text-align: center;
+                        line-height: 38px;
+                        border: 1px solid orange;
+                        border-radius: 200px;
+                    }
+                }
+                .spjs-d2{
+                    @include box(612px,328px);
+                    float: left;
+                    a{
+                        @include box(510px,280px);
+                        float: left;
+                        img{
+                           @include box(510px,280px); 
+                        }                       
+                    }
+                }
+                .d2-xlb{
+                    @include box(100px,240px);
+                    float: left;
+                    background: #F3C913;
+                    margin-top: 30px;
+                    overflow: hidden;
+                    div:nth-of-type(1){
+                        @include box(15px,72px);
+                        margin-top: 30px;
+                        margin-left: 30px;
+                        span:nth-of-type(1){
+                            @include box(15px,15px);
+                            border: 1px solid #fff;
+                            background: #fff;
+                            border-radius: 50%;
+                            float: left;
+                        }
+                        span:nth-of-type(2){
+                            @include box(15px,15px);
+                            border: 1px solid #fff;
+                            background: #fff;
+                            border-radius: 50%;
+                            float: left;
+                            margin-top: 10px;
+                        }
+                        span:nth-of-type(3){
+                            @include box(15px,15px);
+                            border: 1px solid #fff;
+                            border-radius: 50%;
+                            float: left;
+                            margin-top: 10px;
+                        }
+                    }
+                    div:nth-of-type(2){
+                        @include box(45px,22px);
+                        float: right;
+                        span:nth-of-type(1){
+                            @include box(25px,20px);
+                            float: left;
+                            color: #fff;
+                            font-size: 18px;
+                            text-align: center;
+                            line-height: 20px;
+                        }
+                        span:nth-of-type(2){
+                            @include box(20px,20px);
+                            float: left;
+                            color: #fff;
+                            font-size: 15px;
+                            text-align: center;
+                            line-height: 20px;
+                        }
+                    }
+                    div:nth-of-type(3){
+                        @include box(100px,36px);
+                        background: #fff;
+                        border: 1px solid #fff;
+                        border-radius: 200px;
+                        margin-left: -40px;
+                        margin-top: 30px;
+                        float: left;
+                        .left{
+                            @include box(20px,36px);
+                            float: right;
+                            color: yellow;
+                            font-size: 30px;
+                            line-height: 36px;
+                        }
+                        .right{
+                            @include box(20px,36px);
+                            float:right;
+                            color: yellow;
+                            font-size: 30px;
+                            line-height: 36px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .dwbf{
+        @include box(1200px,678px);
+        float: left;
+        margin-top: 80px;
+        border-bottom: 1px solid #ccc;
+        .dwbf-x{
+            @include box(1200px,640px);
+            float: left;
+            background: #F4F4F4;
+            .dwbf-bt{
+                @include box(196px,40px);
+                float: left;
+                .wz-bt{
+                @include box(900px,34px);
+                float: left;
+                div:nth-of-type(1){
+                    @include box(36px,34px);
+                    font-size: 32px;
+                    line-height: 34px;
+                    text-align: center;
+                    font-weight: bold;
+                    color: orange;
+                    float: left;
+                }
+                div:nth-of-type(2){
+                    @include box(140px,34px);
+                    font-size: 32px;
+                    line-height: 34px;
+                    text-align: center;
+                    font-weight: bold;
+                    color: black;
+                    float: left;
+                }
+                }
+            }
+            .dwbf-nr{
+                @include box(1200px,600px);
+                float: left;
+                a{
+                    @include box(222px,526px);
+                    float: left;
+                }
+                div{
+                    @include box(978px,526px);
+                    float: left;
+                    p{
+                        font-size: 12px;
+                        color: #A6A6A6;
+                    }
+                    a{
+                        @include box(518px,366px);
+                        float: right;
+                        margin-top: 100px;
+                    }
+                }
+            }
+        }
+    }
+    .dlbf{
+        @include box(1200px,50px);
+        float: left;
+        border-bottom: 1px solid #ccc;
+        font-size: 15px;
+        line-height: 50px;
+        .dlbf-l1{
+            @include box(255px,22px);
+            float: left;
+            span:nth-of-type(1){
+                @include box(44px,20px);
+                float: left;
+                color: #26668C;
+            }
+        }
+        .dlbf-l2{
+            @include box(255px,22px);
+            float: right;
+            span:nth-of-type(1){
+                @include box(44px,20px);
+                float: left;
+                color: #26668C;
+            }
+        }
+    }
+    .dqbf{
+        @include box(1200px,440px);
+        float: left;
+        margin-top: 40px;
+        .tuijian-lefts{
+            @include box(322px,58px);
+            float:left;
+            .left-lefts{
+                @include box(54px,38px);
+                float:left;
+                margin-top:10px;
+                .cirs{
+                    @include box(5px,5px);
+                    background:#ebc243;
+                    float:right;
+                    margin-left:5px;
+                    border-radius: 50%;
+                }
+                .longs{
+                    @include box(30px,5px);
+                    background:#ebc243;
+                    float:right;
+                    border-radius: 20px;
+                }
+                .tuijian-words{
+                    font-size:24px;
+                    color:#575757;
+                    font-family: "文悦古体仿宋（非商业用途）";
+                }
+            }
+            .left-mids{
+                @include box(68px,58px);
+                float:left;
+                color:#45b45a;
+                line-height:58px;
+                font-size:32px;
+                font-family: "文悦古体仿宋（非商业用途）";
+            }
+            .left-rights{
+                @include box(198px,58px);
+                float:left;
+                line-height:68px;
+                font-size:18px;
+                color:#727272;
+            }
+        }
+        .dqbf-twnr{
+            @include box(1200px,355px);
+            float: left;
+            .dqbf-xfk{
+                @include box(380px,355px);
+                float: left;
+                a:nth-of-type(1){
+                  @include box(380px,267px);
+                  float: left;
+                  border-radius: 40px;
+                  img{
+                     @include box(380px,267px); 
+                  }  
+                }
+                span{
+                    @include box(380px,17px);
+                    float: left;
+                    font-size: 15px;
+                    color: #000000;
+                    line-height: 17px;
+                }
+                p{
+                    @include box(380px,17px);
+                    float: left;
+                    font-size: 15px;
+                    color: #000000;
+                    line-height: 17px;
+                    margin-top: 4px;
+                }
+                div{
+                    @include box(380px,1px);
+                    float: left;
+                    margin-top: 2px;
+                    div{
+                        @include box(90px,1px);
+                        float: left;
+                        background: #ccc;
+                    }
+                }
+                a:nth-of-type(2){
+                  @include box(380px,18px);
+                  margin-top: 10px;
+                  float: left;
+                  img{
+                     @include box(252px,18px); 
+                  }  
+                }
+            }
+            .dqbf-xfk1{
+                @include box(380px,355px);
+                float: left;
+                margin-left: 30px;
+                a:nth-of-type(1){
+                  @include box(380px,267px);
+                  float: left;
+                  border-radius: 40px;
+                  img{
+                     @include box(380px,267px); 
+                  }  
+                }
+                span{
+                    @include box(380px,17px);
+                    float: left;
+                    font-size: 15px;
+                    color: #000000;
+                    line-height: 17px;
+                }
+                p{
+                    @include box(380px,17px);
+                    float: left;
+                    font-size: 15px;
+                    color: #000000;
+                    line-height: 17px;
+                    margin-top: 4px;
+                }
+                div{
+                    @include box(380px,1px);
+                    float: left;
+                    margin-top: 2px;
+                    div{
+                        @include box(90px,1px);
+                        float: left;
+                        background: #ccc;
+                    }
+                }
+                a:nth-of-type(2){
+                  @include box(380px,18px);
+                  margin-top: 10px;
+                  float: left;
+                  img{
+                     @include box(252px,18px); 
+                  }  
+                }
             }
         }
     }
