@@ -9,21 +9,21 @@
     left: 0;
     top: 0;
     a:nth-of-type(1){
-        @include box(470px,400px);
-        margin-left: 425px;
-        margin-top: 60px;
+        @include box(440px,370px);
+        margin: 0 auto;
+        display: block;
         background: #fff;
         img{
-           @include box(470px,400px); 
+           @include box(440px,370px); 
         }
     }
     a:nth-of-type(2){
-        @include box(470px,400px);
-        margin-left: 425px;
-        margin-top: 60px;
+        display: block;
+        @include box(440px,370px);
+        margin: 100px auto;
         background: #fff;
         img{
-           @include box(470px,400px); 
+           @include box(440px,370px); 
         }
     }
 }
