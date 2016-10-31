@@ -9,11 +9,13 @@
 	.footerBao{
 		@include box(1200px,100%);
 	    @include level;
-	    background: red;
+	    // background: red;
 	    padding-top:65px;
 	    img{
-	    	width: 150px;
-	    	height: 200;
+	    	// @include box(150px,)
+	    	// width: 150px;
+	    	// height: 200;
+	    	// margin-top: 40px;
 	    }
 	}
 

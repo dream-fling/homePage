@@ -5,7 +5,7 @@
   list-style: none;
   box-sizing: border-box;
   position: relative;
-  font-family: "microsoft yahei"; }
+  font-family: "微软雅黑"; }
 
 a {
   text-decoration: none; }
@@ -39,8 +39,4 @@ img {
     left: 0;
     right: 0;
     margin: auto;
-    background: red;
     padding-top: 65px; }
-    #footer .footerBao img {
-      width: 150px;
-      height: 200; }
