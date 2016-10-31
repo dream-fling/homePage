@@ -44,7 +44,6 @@ img {
   height: 370px;
   margin: 0 auto;
   display: block;
-  background: #fff;
 }
 
 .zp-fk a:nth-of-type(1) img {
@@ -57,7 +56,6 @@ img {
   width: 440px;
   height: 370px;
   margin: 100px auto;
-  background: #fff;
 }
 
 .zp-fk a:nth-of-type(2) img {
