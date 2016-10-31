@@ -5,7 +5,7 @@
   list-style: none;
   box-sizing: border-box;
   position: relative;
-  font-family: "microsoft yahei";
+  font-family: "微软雅黑";
 }
 
 a {
@@ -30,158 +30,172 @@ img {
 /*边框*/
 .banner {
   width: 100%;
-  height: 750px;
+  height: 835px;
   background: url("../img/home/banner1_02.jpg") no-repeat;
   background-size: 100%;
 }
 
-.banner .zhezhao {
+.banner .zhao {
   width: 100%;
-  height: 590px;
-  background: rgba(22, 92, 118, 0.4);
+  height: 835px;
+  background: rgba(22, 92, 118, 0.8);
 }
 
-.banner .zhezhao .pp {
-  width: 1202px;
-  height: 199px;
-  background: #42D1F1;
-  box-shadow: 0 0 15px #000;
+.banner .zhao .green-box {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  right: 165px;
+  bottom: 51px;
+  z-index: 1;
+  width: 420px;
+  height: 480px;
+  background: rgba(29, 212, 115, 0.4);
+}
+
+.banner .zhao .banner-content {
+  width: 1238px;
+  height: 745px;
+  background: url("../img/home/banner1_02.jpg") no-repeat;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
   margin: auto;
-  left: 78px;
-  bottom: -580px;
+  z-index: 2;
+  top: 190px;
 }
 
-.banner .zhezhao .pp .kspp {
-  width: 232px;
-  height: 199px;
-  background: url("../img/home/search.jpg") no-repeat;
-  background-size: 100%;
-  text-align: center;
-  float: left;
-}
-
-.banner .zhezhao .pp .kspp .zi {
-  font-size: 18px;
-  color: #02254D;
-  padding-top: 80px;
-}
-
-.banner .zhezhao .pp .kspp .zi2 {
-  font-size: 12px;
-  color: #02254D;
-}
-
-.banner .zhezhao .pp .kspp .circle {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #000;
+.banner .zhao .big-fang {
+  width: 150px;
+  height: 150px;
   position: absolute;
-  right: -3px;
-  top: 0;
+  left: 43px;
+  bottom: 142px;
+  background: rgba(232, 188, 15, 0.4);
+  z-index: 3;
 }
 
-.banner .zhezhao .pp .kspp .cir1 {
-  top: 16px;
+.banner .zhao .small-fang {
+  width: 66px;
+  height: 66px;
+  position: absolute;
+  left: 10px;
+  bottom: 260px;
+  background: rgba(232, 188, 15, 0.4);
+  z-index: 3;
 }
 
-.banner .zhezhao .pp .kspp .cir2 {
-  top: 32px;
+.banner .zhao .select-box {
+  width: 120px;
+  height: 240px;
+  position: absolute;
+  right: 110px;
+  bottom: 116px;
+  background: #f0c310;
+  z-index: 3;
+  overflow: hidden;
 }
 
-.banner .zhezhao .pp .kspp .cir3 {
-  top: 48px;
+.banner .zhao .select-box .select-list {
+  width: 16px;
+  height: 96px;
+  margin: 0 auto;
+  margin-top: 38px;
+  margin-left: 25px;
 }
 
-.banner .zhezhao .pp .kspp .cir4 {
-  top: 59px;
-  background: rgba(0, 0, 0, 0.7);
-}
-
-.banner .zhezhao .pp .kspp .cir5 {
-  top: 75px;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.banner .zhezhao .pp .kspp .cir6 {
-  top: 91px;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.banner .zhezhao .pp .kspp .cir7 {
-  top: 107px;
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.banner .zhezhao .pp .kspp .cir8 {
-  top: 123px;
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.banner .zhezhao .pp .kspp .cir9 {
-  top: 139px;
-  background: rgba(255, 255, 255, 0.8);
-}
-
-.banner .zhezhao .pp .kspp .cir10 {
-  top: 155px;
-  background: rgba(255, 255, 255, 0.8);
-}
-
-.banner .zhezhao .pp .kspp .cir11 {
-  top: 171px;
-  background: rgba(255, 255, 255, 0.8);
-}
-
-.banner .zhezhao .pp .kspp .cir12 {
-  top: 187px;
-  background: rgba(255, 255, 255, 0.8);
-}
-
-.banner .zhezhao .pp .text {
-  width: 846px;
-  height: 82px;
-  float: left;
-  margin-left: 43px;
-  margin-top: 63px;
-  border-radius: 50px;
+.banner .zhao .select-box .select-list .listname {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
   background: #fff;
-  z-index: 10;
-  line-height: 82px;
-  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 11px;
 }
 
-.banner .zhezhao .pp .cir13 {
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background: #FFD117;
-  position: absolute;
-  left: 27px;
-  top: 37px;
-  z-index: 11;
-}
-
-.banner .zhezhao .pp span {
-  margin-left: 66px;
-}
-
-.banner .zhezhao .pp .text2 {
-  width: 179px;
-  height: 84px;
-  border-radius: 50px;
+.banner .zhao .select-box .select-list .listname:nth-of-type(4) {
+  margin-bottom: 0;
   border: 3px solid #fff;
-  background: url("../img/home/xunzhaobj.jpg");
-  margin-left: 680px;
-  margin-top: -70px;
-  box-shadow: 0 0 9px #000;
-  font-size: 35px;
-  line-height: 84px;
-  text-align: center;
+  background: #f0c310;
+}
+
+.banner .zhao .select-box .xuhao {
+  width: 47px;
+  height: 20px;
+  float: right;
+  margin-right: 18px;
+  margin-bottom: 104px;
+}
+
+.banner .zhao .select-box .xuhao .zeroone {
+  font-size: 26px;
   color: #fff;
+}
+
+.banner .zhao .select-box .xuhao .three {
+  font-size: 22px;
+  color: #fff;
+}
+
+.banner .zhao .select-box .fangxiang {
+  width: 86px;
+  height: 36px;
+  background: #fff;
+  line-height: 36px;
+  border-radius: 20px;
+  margin-left: -30px;
+  margin-top: 40px;
+}
+
+.banner .zhao .select-box .fangxiang .left {
+  color: #e8bc0f;
+  font-size: 24px;
+  float: right;
+  margin-right: 10px;
+}
+
+.banner .zhao .select-box .fangxiang .right {
+  color: #e8bc0f;
+  font-size: 24px;
+  float: right;
+  margin-right: 5px;
+}
+
+.banner .zhao .blue-box {
+  width: 590px;
+  height: 258px;
+  background: #10c8f0;
+  position: absolute;
+  left: 119px;
+  bottom: 217px;
+  z-index: 3;
+}
+
+.banner .zhao .blue-box .words-box {
+  margin-top: 30px;
+}
+
+.banner .zhao .blue-box .words-box .collection {
+  width: 100%;
+  height: 44px;
+  margin-left: 80px;
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.banner .zhao .blue-box .words-box .line {
+  width: 288px;
+  height: 8px;
+  background: #fff;
+  margin-top: 22px;
+  margin-left: 80px;
+}
+
+.banner .zhao .blue-box .words-box .text {
+  margin-left: 80px;
+  color: #fff;
+  font-size: 24px;
+  font-family: "微软雅黑";
+  margin-top: 22px;
 }
 
 .tj {
@@ -237,14 +251,20 @@ img {
 .gl .icon {
   width: 129px;
   height: 129px;
-  background: url("../img/home/yuan5.jpg") no-repeat;
-  background-size: 100%;
   margin-top: 45px;
   margin-left: 78px;
-  border: 3px solid #DCDCDC;
   border-radius: 50%;
+  overflow: hidden;
   float: left;
+  border: 3px solid #DCDCDC;
   margin-right: 45px;
+  text-align: center;
+  background: #00293F;
+}
+
+.gl .icon img {
+  width: 80px;
+  margin-top: 25px;
 }
 
 .gl .dress {
@@ -268,10 +288,18 @@ img {
   font-weight: bold;
 }
 
+.gl .dress p .sjzj1 {
+  color: #EBC548;
+}
+
 .gl .dress p .xinzi {
   font-size: 26px;
-  color: #04B0D4;
+  color: #EBC445;
   font-weight: bold;
+}
+
+.gl .dress p .xinzi1 {
+  color: #EBC548;
 }
 
 .gl .dress p .guanli {
@@ -321,6 +349,13 @@ img {
   background: #FFCA4A;
   margin: 0 auto;
   margin-top: 20px;
+  line-height: 43px;
+  text-align: center;
+  color: #fff;
+}
+
+.gl .name .zhiliao1 {
+  background: #42D1F1;
 }
 
 .gl1 {
@@ -372,6 +407,7 @@ img {
   width: 1200px;
   margin: 0 auto;
   margin-top: 86px;
+  margin-bottom: 70px;
 }
 
 .qiye .qiye-top {
@@ -461,19 +497,32 @@ img {
 .qiye .qiye-bot .bot-one .bot-one-bot .tu {
   width: 77px;
   height: 77px;
-  background: url("../img/home/logo3.jpg") no-repeat;
-  background-size: 100%;
   border-radius: 50%;
   border: 2px solid #ededed;
   float: left;
+  text-align: center;
+  background: #080808;
+  overflow: hidden;
+}
+
+.qiye .qiye-bot .bot-one .bot-one-bot .tu img {
+  width: 30px;
 }
 
 .qiye .qiye-bot .bot-one .bot-one-bot .tu1 {
-  background: url("../img/home/logo4.jpg") no-repeat;
-  background-size: cover;
+  background: #F7941D;
+}
+
+.qiye .qiye-bot .bot-one .bot-one-bot .tu1 img {
+  margin-top: 10px;
+  width: 40px;
 }
 
 .qiye .qiye-bot .bot-one .bot-one-bot .tu2 {
-  background: url("../img/home/logo5.jpg") no-repeat;
-  background-size: 100%;
+  background: #fff;
+}
+
+.qiye .qiye-bot .bot-one .bot-one-bot .tu2 img {
+  margin-top: 15px;
+  width: 70px;
 }
