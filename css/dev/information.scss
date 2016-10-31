@@ -1,0 +1,188 @@
+@import "base";
+@import "footer";
+@import "header";
+
+
+body{
+	background: #f4f4f4;
+}
+#header{
+	background: #09415c;
+}
+#information{
+	@include box(1200px,auto);
+	padding-left: 178px;
+	padding-top: 30px;
+	// overflow: hidden;
+    background: #ffffff;
+    font-size: 13px;
+    @include level;
+    color: #929292;
+
+}
+.user{
+	margin-top: 65px;
+	.con-word{
+		display: block;
+		float: left;
+		margin-top:10px;
+	}
+	.picture{
+		margin-left:20px;
+		display: block;
+		border-radius:10px;
+		float: left;
+		// overflow: hidden;
+		img{
+			width: 86px;
+		    height:86px;
+		    left: 50px;
+		    bottom: -70px;
+		}
+	}
+	td{
+		width: 85px;
+		float: left;
+	}
+	.picture img{
+		margin-left: -38px;
+		margin-top: -82px;
+	}
+	.teshu{
+		width: 700px;
+		height: 28px;
+		line-height: 28px;
+		display: block;
+		margin-top: 24px;
+	}
+}
+
+.nicheng{
+	display:block;
+	width: 178px;
+	height: 28px;
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+	float: left;
+}
+.magin{
+	width:210px;
+	height: 86px;
+}
+.teshu .inputk{
+	width: 220px;
+}
+.sex{
+	width: 60px;
+	height: 28px;
+	text-align: center;
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+	float: left;
+}
+#select{
+	width: 110px;
+}
+.qianm{
+	width: 520px;
+	margin-top: 30px;
+	line-height: 11em;
+}
+.qianm input{
+	width: 422px;
+	height: 72px;
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+}
+.seek{
+	margin-top:54px;
+}
+.name{
+	width: 750px;
+	height: 30px;
+    #real{
+		width: 202px;
+	}
+	#real input{
+		width: 178px;
+		height: 28px;
+		border: 1px solid #e5e5e5;
+		border-radius: 4px;
+	}
+}
+.seek td{
+	width:85px; 
+}
+.status{
+	width: 368px;
+	height: 28px;
+	line-height: 28px;
+	font-size: 12px;
+	color: #929292;
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+}
+.requst{
+	width: 520px;
+	height: 30px;
+	line-height: 5em;
+}
+ select{
+	height: 28px;
+	line-height: 28px;
+	font-size: 12px;
+	color: #929292;
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+}
+.sheji{
+	width: 154px;
+	height: 30px;
+}
+#shejs{
+	width: 130px;
+	
+}
+#sheng{
+	width: 88px;
+}
+#xinzi{
+	width: 178px;
+}
+.phonenub{
+	line-height: 4em;
+}
+.major{
+	margin-top: 54px;
+}
+td{
+	width: 85px;
+}
+input{
+	color: #929292;
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;	
+}
+.major #yuanx{
+	width: 200px;
+	height: 30px;
+}
+.major #yuanx input{
+	width: 178px;
+	height: 28px;
+}
+.hang{
+	line-height: 4em;
+}
+#gaozhong{
+	width: 117px;
+}
+.hezi111{
+	width: 100%;
+	height: 60px;
+}
+
+#footer{
+	top :870px;
+	left: 0;
+}
