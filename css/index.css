@@ -54,7 +54,6 @@ img {
 .banner .zhao .banner-content {
   width: 1438px;
   height: 745px;
-  background: url("../img/home/banner1_02.jpg") no-repeat;
   overflow: hidden;
   position: absolute;
   left: 0;
@@ -62,6 +61,17 @@ img {
   margin: auto;
   z-index: 2;
   top: 80px;
+}
+
+.banner .zhao .banner-content img {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.banner .zhao .banner-content img:nth-of-type(1) {
+  display: block;
 }
 
 .banner .zhao .big-fang {
@@ -108,11 +118,12 @@ img {
   height: 16px;
   border-radius: 50%;
   background: #fff;
+  border: 3px solid #fff;
   margin-bottom: 11px;
+  box-sizing: border-box;
 }
 
-.banner .zhao .select-box .select-list .listname:nth-of-type(4) {
-  margin-bottom: 0;
+.banner .zhao .select-box .select-list .listname:nth-of-type(1) {
   border: 3px solid #fff;
   background: #f0c310;
 }
@@ -133,6 +144,27 @@ img {
 .banner .zhao .select-box .xuhao .three {
   font-size: 22px;
   color: #fff;
+}
+
+.banner .zhao .select-box .xuhao div {
+  height: 26px;
+  width: 26px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner .zhao .select-box .xuhao div .zeroone {
+  font-size: 26px;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.banner .zhao .select-box .xuhao div .zeroone:nth-of-type(1) {
+  opacity: 1;
 }
 
 .banner .zhao .select-box .fangxiang {
@@ -766,7 +798,6 @@ img {
 #fixed .fixed-cir {
   width: 34px;
   height: 420px;
-  border: 1px solid #fff;
   margin: 0 auto;
   margin-top: 200px;
 }
@@ -777,8 +808,7 @@ img {
   float: left;
   border-radius: 50%;
   background: #3c4046;
-  margin-bottom: 45px;
-  margin: 0 auto;
+  margin-top: 45px;
 }
 
 #fixed .fixed-cir .cir-list:nth-of-type(1) {

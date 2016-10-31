@@ -20,11 +20,20 @@ $bjimg:"../img/home/";
         }
         .banner-content{
             @include box(1438px,745px);
-            background:url($bjimg+"banner1_02.jpg") no-repeat;
             overflow: hidden;
             @include level;
             z-index: 2;
             top:80px;
+            img{
+                display: none;
+                position: absolute;
+                left: 0;
+                top: 0;
+                
+            }
+            img:nth-of-type(1){
+                 display: block;
+            }
          }
          .big-fang{
              @include box(150px,150px);
@@ -59,10 +68,11 @@ $bjimg:"../img/home/";
                    @include box(16px,16px);
                    border-radius: 50%; 
                    background:#fff;
+                   border: 3px solid #fff;
                    margin-bottom:11px;
+                   box-sizing: border-box;
                 }
-                .listname:nth-of-type(4){
-                    margin-bottom:0;
+                .listname:nth-of-type(1){
                     border:3px solid #fff;
                     background:#f0c310;
                 }
@@ -80,6 +90,25 @@ $bjimg:"../img/home/";
                      font-size:22px;
                      color:#fff;
                  }
+                 div{
+                     height: 26px;
+                      width:26px;
+                      float:left;
+                      position: relative;
+                      overflow: hidden;
+                        .zeroone{
+                         font-size: 26px;
+                        color: #fff;
+                         position: absolute;
+                          left: 0;
+                          top: 0;
+                          opacity: 0;
+                       }  
+                       .zeroone:nth-of-type(1){
+                            opacity: 1;
+                       }    
+                 }
+                 
              }
              .fangxiang{
                  @include box(86px,36px);
@@ -583,7 +612,6 @@ $bjimg:"../img/home/";
     top:0;
     .fixed-cir{
         @include box(34px,420px);
-        border:1px solid #fff;
         margin:0 auto;
         margin-top:200px;
         .cir-list{
@@ -592,8 +620,7 @@ $bjimg:"../img/home/";
             float:left;
             border-radius: 50%;
             background:#3c4046;
-            margin-bottom:45px;
-            margin:0 auto;
+            margin-top:45px;
         }
         .cir-list:nth-of-type(1){
             background:#10c8f0;
