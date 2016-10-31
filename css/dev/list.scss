@@ -128,9 +128,9 @@ $bg:"../img/home/";
            @include box(1202px,199px);
            background: #42D1F1;
            box-shadow: 0 0 15px #000;
-           @include vertical;
-           left:78px;
-           bottom: -830px;
+           position: absolute;
+           top:735px;
+           left: 350px;
            z-index: 111;
            .kspp{
               @include box(232px,199px);
