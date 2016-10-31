@@ -57,13 +57,14 @@ $bg:"../img/home/";
                 margin-top:38px;
                 margin-left:25px;
                 .listname{
-                   @include box(16px,16px);
+                    @include box(16px,16px);
                    border-radius: 50%; 
                    background:#fff;
+                   border: 3px solid #fff;
                    margin-bottom:11px;
+                   box-sizing: border-box;
                 }
-                .listname:nth-of-type(4){
-                    margin-bottom:0;
+                .listname:nth-of-type(1){
                     border:3px solid #fff;
                     background:#f0c310;
                 }
@@ -81,6 +82,25 @@ $bg:"../img/home/";
                      font-size:22px;
                      color:#fff;
                  }
+                 div{
+                     height: 26px;
+                      width:26px;
+                      float:left;
+                      position: relative;
+                      overflow: hidden;
+                        .zeroone{
+                         font-size: 26px;
+                        color: #fff;
+                         position: absolute;
+                          left: 0;
+                          top: 0;
+                          opacity: 0;
+                       }  
+                       .zeroone:nth-of-type(1){
+                            opacity: 1;
+                       }    
+                 }
+                 
              }
              .fangxiang{
                  @include box(86px,36px);
@@ -109,7 +129,7 @@ $bg:"../img/home/";
            background: #42D1F1;
            box-shadow: 0 0 15px #000;
            @include vertical;
-//         left:78px;
+           left:78px;
            bottom: -830px;
            z-index: 111;
            .kspp{
@@ -263,8 +283,6 @@ $bg:"../img/home/";
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
     .icon{
          @include box(129px,129px);
-//       background: url($bg+"yuan5.jpg")no-repeat;
-//       background-size:100%;
          margin-top: 45px;
          margin-left: 78px;
          border-radius: 50%;
@@ -287,7 +305,7 @@ $bg:"../img/home/";
         padding-top: 45px;
         float: left;
         p{
-          color: #404040;
+//        color: #404040;
           line-height: 40px; 
           span{
                 margin-right: 40px;
@@ -300,7 +318,7 @@ $bg:"../img/home/";
           }
           .xinzi{
               font-size: 26px;
-              color: #EBC445;
+              color: #08B0D5;
               font-weight: bold;
           }
           .xinzi1{
@@ -341,16 +359,15 @@ $bg:"../img/home/";
          }
          .zhiliao{
              @include box(147px,43px);
-             border-radius: 50px;
-             background: #FFCA4A;
+            background: url($bg+"zhiliao1.png");
              margin: 0 auto;
              margin-top: 20px;
-             line-height: 43px;
-             text-align: center;
-             color: #fff;
          }
          .zhiliao1{
-             background: #42D1F1;
+             background: url($bg+"zhiliao2.png");
+         }
+         .zhiliao2{
+             background: url($bg+"zhiliao3.png");
          }
     }
 }
@@ -397,6 +414,19 @@ $bg:"../img/home/";
    .qiye-top{
      @include box(1200px,46px);
      line-height: 46px;
+        .CIR{
+            @include box(5px,5px);
+            background:#ebc243;
+//          float:right;
+            margin-left:5px;
+            border-radius: 50%;
+        }
+        .long{
+            @include box(30px,5px);
+            background:#ebc243;
+//          float:right;
+            border-radius: 20px;
+        }
        span{
            font-size: 20px;
            color: #727272;
@@ -409,20 +439,15 @@ $bg:"../img/home/";
        }
        .fenlei{
          @include box(147px,43px);
-         font-size: 16px;
-         text-align: center;
-         border-radius: 50px;
-         background: #FFCA4A;
+         background: url($bg+"fenlei1.png");
          float:left;
          margin-left: 46px;
-         color:#fff;
-         line-height:43px;
          }
          .fenlei1{
-           background: #43D4F3;  
+           background: url($bg+"fenlei2.png");
          }
          .fenlei2{
-           background: #3DE695;  
+           background: url($bg+"fenlei3.png");
          }
    }
    .qiye-bot{
