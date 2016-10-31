@@ -637,3 +637,105 @@ img {
   margin-top: 15px;
   width: 70px;
 }
+
+.cenav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 50px;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.cenav .touxiang {
+  position: absolute;
+  top: 30px;
+  left: 2px;
+}
+
+.cenav .touxiang img {
+  width: 45px;
+}
+
+.cenav .home {
+  position: absolute;
+  top: 150px;
+  left: 7px;
+  height: auto;
+}
+
+.cenav .home .homepage_ce {
+  margin-top: 15px;
+}
+
+.cenav .home .homepage_ce #one_1 {
+  width: 35px;
+}
+
+.cenav .home .homepage_ce .cang {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  opacity: 0;
+  text-align: center;
+  transition: all 1.5s;
+}
+
+.cenav .home .homepage_ce .cang span {
+  position: absolute;
+  left: 28px;
+  top: 7px;
+  color: #219DEC;
+  letter-spacing: 2px;
+  z-index: 10;
+}
+
+.cenav .home .homepage_ce .two_1 {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  width: 25px;
+}
+
+.cenav .tuichu {
+  position: absolute;
+  left: 7px;
+  bottom: 50px;
+}
+
+.cenav .tuichu .back {
+  margin-bottom: 15px;
+}
+
+.cenav .tuichu .back img {
+  width: 35px;
+}
+
+.cenav .tuichu .tui img {
+  width: 35px;
+}
+
+.homepage_ce:nth-of-type(1):hover .cang {
+  opacity: 1;
+}
+
+.homepage_ce:nth-of-type(2):hover .cang {
+  opacity: 1;
+}
+
+.homepage_ce:nth-of-type(3):hover .cang {
+  opacity: 1;
+}
+
+.homepage_ce:nth-of-type(4):hover .cang {
+  opacity: 1;
+}
+
+.homepage_ce:nth-of-type(5):hover .cang {
+  opacity: 1;
+}
+
+.clear {
+  clear: both;
+}
