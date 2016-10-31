@@ -4,6 +4,10 @@ $bg:"../img/home/";
     @include box(100%,835px);
     background:url($bg+"banner1_02.jpg") no-repeat;
     background-size:100%;
+    margin-bottom: 158px;
+    .background{
+        background: rgba(7,78,113,0.8);
+    }
     .zhao{
         @include box(100%,835px);
         background:rgba(#165c76,0.8);
@@ -21,7 +25,7 @@ $bg:"../img/home/";
             overflow: hidden;
             @include level;
             z-index: 2;
-            top:190px;
+            top:90px;
          }
          .big-fang{
              @include box(150px,150px);
@@ -100,40 +104,119 @@ $bg:"../img/home/";
                  }
              }
          }
-         .blue-box{
-             @include box(590px,258px);
-             background:#10c8f0;
-             position:absolute;
-             left:119px;
-             bottom:217px;
-             z-index: 3;
-             @mixin margin{
-                 margin-left:80px;
-             }
-             .words-box{
-                 margin-top:30px;
-                .collection{
-                     @include box(100%,44px);
-                     @include margin;
-                     color:#fff;
-                     font-size:60px;
-                     font-weight:bold;
-                 }
-                .line{
-                     @include box(288px,8px);
-                     background: #fff;
-                     margin-top:22px;
-                     @include margin;
-                } 
-                .text{
-                    @include margin;
-                    color: #fff;
-                    font-size:24px;
-                    font-family: "微软雅黑";
-                    margin-top:22px;
-                }
-         
-            }
+         .pp{
+           @include box(1202px,199px);
+           background: #42D1F1;
+           box-shadow: 0 0 15px #000;
+           @include vertical;
+           left:78px;
+           bottom: -830px;
+           z-index: 111;
+           .kspp{
+              @include box(232px,199px);
+              background: url($bg+"search.jpg")no-repeat;
+              background-size: 100%;
+              text-align: center;
+              float: left;
+              .zi{
+                 font-size: 18px; 
+                 color: #02254D;
+                 padding-top: 80px;
+              }
+              .zi2{
+                 font-size: 12px; 
+                 color: #02254D;
+              }
+              .circle{
+                 @include box(6px,6px); 
+                 border-radius: 50%;
+                 background:#000;
+                 position: absolute;
+                 right:-3px;
+                 top:0;
+              }
+              .cir1{
+                  top:16px;
+              }
+              .cir2{
+                  top:32px;
+              }
+              .cir3{
+                  top:48px;
+              }
+              .cir4{
+                  top:59px;
+                  background: rgba(#000,0.7);
+              }
+              .cir5{
+                  top:75px;
+                  background: rgba(#000,0.6);
+              }
+              .cir6{
+                  top:91px;
+                  background: rgba(#000,0.5);
+              }
+              .cir7{
+                  top:107px;
+                  background: rgba(#000,0.4);
+              }
+              .cir8{
+                  top:123px;
+                  background: rgba(#000,0.3);
+              }
+              .cir9{
+                  top:139px;
+                  background: rgba(#fff,0.8);
+              }
+              .cir10{
+                  top:155px;
+                  background: rgba(#fff,0.8);
+              }
+              .cir11{
+                  top:171px;
+                  background: rgba(#fff,0.8);
+              }
+              .cir12{
+                  top:187px;
+                  background: rgba(#fff,0.8);
+              }
+           }
+           .text{
+              @include box(846px,82px);  
+              float: left;
+              margin-left: 43px;
+              margin-top: 63px;
+              border-radius: 50px;
+              background: #fff;
+              z-index: 10;
+              line-height: 82px;
+              color:rgba(0,0,0,0.4);
+           }
+           .cir13{
+               @include box(13px,13px); 
+               border-radius: 50%;
+               background: #FFD117; 
+               position: absolute;
+               left:27px;
+               top:37px;
+               z-index: 11;
+           }
+           span{
+               margin-left: 66px;
+           }
+           .text2{
+              @include box(179px,84px); 
+              border-radius: 50px; 
+              border: 3px solid #fff;
+              background: url($bg+"xunzhaobj.jpg"); 
+              margin-left: 680px;
+              margin-top: -70px;
+              box-shadow: 0 0 9px #000;
+              font-size: 35px;
+              line-height: 84px;
+              text-align: center;
+              color: #fff;
+           }
         }
     }
 }
