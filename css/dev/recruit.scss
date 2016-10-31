@@ -2,11 +2,159 @@
 body{
     background: #F4F4F4;
 }
-.box{
-    width: $inner-width;
-    height: 330px;
-    background: red;
+//头部
+#header{
+    @include box(100%,139px);
+    position:relative;
+    left: 0;top: 0;
+    background:#104860;
+}
+#headerHe{
+    @include box(1200px,100%);
     @include level;
+    // background: red;
+    // @include cha(#ccc)
+    a{
+        color: #ffffff;
+    }
+    .ganggang{
+        @include box(0px,40px);
+        // background: #c1c1c1;
+         border-left:1px dashed #c2c2c2;
+         float: left;
+         margin-top: 40px;
+    }
+    .banner-fiddy{
+        // position: absolute;
+        float: left;
+        width: 80px;
+        height: 140px;
+        margin-top: 10px;
+        background: url($headerimg+"logo.png") no-repeat;
+        margin-left: -30px;
+    }
+    .Hekuai{
+        float: left;
+        @include box(210px,70%);
+        margin-left:5px; 
+        color: #707f8b;
+        margin-top:30px;
+        .heng{
+          @include level;
+          @include box(120px,1px);
+          background: #707577;
+          // margin:20px auto;
+          margin-left: -0px;
+          // margin-top: 0px;
+          margin-top: 8px; 
+         > div {
+            @include box(40px,1px);
+            background: #ceb12c; 
+          }
+        }
+        > li:nth-child(3){
+        margin-top: 16px
+       }
+       :nth-child(1){
+        margin-left: 40px;
+       }
+       .tuo{
+       @include box(70px,3px);
+       border-radius: 20px;
+       background:#ceb12c;
+       margin-top: 8px ;
+       float: left;
+       }
+       .tuoyuan{
+        float: left;
+        @include box(5px,5px)
+        border-radius: 50%;
+        background: #ceb12c;
+        margin-top: 6px ;
+        margin-left: 10px;
+       }
+    }
+
+    // 搜索框
+    #searchform{
+       float: left;
+       margin-top: 40px;
+       // margin-left: 20px;
+
+       .search{
+        @include box(280px,37px);
+        float: left;
+        // margin-top: 40px;
+        border-radius: 20px;
+        border: 1px solid #ffffff;
+        background: #245f78;
+       .yuanxin{
+        @include box(1px,20px)
+        background: #ccc;
+        // margin-left: 30px;
+        left: 20px;
+        z-index: 2;
+        // @mixin level;
+        @include vertical;
+       }
+       .shugang{
+        @include box(5px,5px)
+        @include vertical;
+        z-index: 2;
+        border-radius: 50%;
+        background: #ffd015;
+        left: 5px;
+
+       }
+        input, .search button {
+            border: none;
+            float: left;
+        }
+         input.boxss {
+            height: 35px;
+            width: 210px;
+            margin-left: 22px;
+            margin-right: 0px;
+            padding-right: 0px;
+            background: #245f78;
+            // background: rgba(248,248,248,0,7);
+            // background: rgba(248,248,248,0.7);
+            // margin: 1px;
+            // border-radius: 20px;
+
+        }
+         input.boxss:focus {
+            background:#52aad4;
+            outline: none;
+        }
+         button.formbtn {
+            border: none;
+            width: 28px;
+            height: 28px;
+            margin: 0px auto;
+            margin: 1px;
+            background: url(http://sandbox.runjs.cn/uploads/rs/339/livk7pl5/search_blue.png) no-repeat top right;
+        }
+         button.formbtn:hover {
+            background: url(http://sandbox.runjs.cn/uploads/rs/339/livk7pl5/search_black.png) no-repeat bottom right;
+        }
+
+       }
+   
+        
+    }
+    
+};
+//banner
+.box{
+    width: 100%;
+    height: 330px;
+//  background: red;
+    @include level;
+    img{
+        height: 330px;
+        width: 100%;
+    }
 }
 @font-face{
     font-family: 'iconfont';
@@ -569,15 +717,16 @@ $imgss:"img";
 }
 //潜意识
 #mentality{
+    -webkit-border-radius: 10px;
     @include level;
     width: 850px;
     height: 260px;
-    padding:18px 0 0 13px;
+    padding:18px 0 0 40px;
     border: 1px solid #E7E7E7;
     border-top: 3px solid #13C7F1;
     box-shadow: 0 0 1px #e7e7e7;
     background: #fff;
-    margin-top: 1762px;
+    margin-top: 1770px;
 //  overflow: hidden;
     .tutu{
         position: absolute;
@@ -671,4 +820,87 @@ $imgss:"img";
     margin-left: 10px;
     font-size: 10px;
     line-height: 20px;
+}
+.cccc{
+    color: #90CBFC;
+    font-size: 10px;
+    margin-left: 10px;
+}
+//详细评论
+.speek{
+    width: 850px;
+    height: 300px;
+    @include level;
+    border-top: 2px solid #0EC8EF;
+    margin-top: 2038px;
+    -webkit-border-radius: 10px;
+    background: #fff;
+    .x{
+        width: 100%;
+        height: 50px;
+        border-bottom:2px solid #F4F4F4;
+        .a{
+            width: 100px;
+            height: 40px;
+            position: absolute;
+            top: 8px;
+            left: 40px;
+            .aa{
+                width: 25px;
+                height: 2px;
+                -webkit-border-radius: 50px;
+                background: #FFD100;
+                float: left;
+                margin-top: 5px;
+            }
+            .bb{
+                color: #000;
+                font-size: 10px;
+                float: left;
+                position: absolute;
+                left: 0px;
+                bottom: 13px;
+            }
+            .cc{
+                display: block;
+                font-size: 22px;
+                color: #5BDB9E;
+            }
+        }
+    }
+    .j{
+        width: 380px;
+        height: 55px;
+        border: 1px solid #ccc;
+        float: left;
+        margin-left: 20px;
+        margin-top: 15px;
+        border-left: 3px solid #00B38A;
+        padding-left: 10px;
+        .a{
+            color: #00B38A;
+            font-size: 15px;
+            display: block;
+            margin-top: 10px;
+        }
+        .b{
+            color: red;
+            font-size: 12px;
+        }
+        .c{
+            color: #000;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        .d{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 12px;
+            color: #ccc;
+        }
+    }
+    .h{
+        margin-top: 40px;
+    }
 }
